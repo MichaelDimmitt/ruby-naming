@@ -8,11 +8,45 @@
 > naming things. <br>
 > -- Phil Karlton
   
+  ### Quick Reference Section
+
+  Github Repositories named by the ruby community seem to use snake case, ex: project_name.
+  In particular, Github does not use snake case. Their repos with websites include "."'s, they use, ex: project-name.
+
   Use `snake_case` for naming files, e.g. `hello_world.rb`.
 
   Use `snake_case` for naming directories, e.g.
   `lib/hello_world/hello_world.rb`.
 
+  Use `UpperCamelCase` (PascalCase) for classes and modules.  (Keep acronyms like HTTP, RFC, XML uppercase.)
+  
+  Use `snake_case` for symbols, methods and variables.
+  Do not separate numbers from letters on symbols, methods and variables.
+
+  Use `SCREAMING_SNAKE_CASE` for other constants.
+  
+  The names of predicate methods (methods that return a boolean value) should
+  end in a question mark.  (i.e. `Array#empty?`). Methods that don't return a
+  boolean, shouldn't end in a question mark.
+
+  Avoid prefixing predicate methods with the auxiliary verbs such as `is`,
+  `does`, or `can`.  These words are redundant and inconsistent with the style of
+  boolean methods in the Ruby core library, such as `empty?` and `include?`.
+
+  The names of potentially *dangerous* methods (i.e. methods that modify
+  `self` or the arguments, `exit!` (doesn't run the finalizers like `exit`
+  does), etc.) should end with an exclamation mark if there exists a safe
+  version of that *dangerous* method.
+
+  part 2 ... 
+  
+  Define the non-bang (safe) method in terms of the bang (dangerous) one if
+  possible.
+
+  When defining binary operators, name the parameter `other`(`<<` and `[]` are
+  exceptions to the rule, since their semantics are different).
+  
+  ## Naming Repeated, with examples for Referencing purposes
   Use `snake_case` for symbols, methods and variables.
   Do not separate numbers from letters on symbols, methods and variables.
 
