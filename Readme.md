@@ -1,3 +1,9 @@
+## Alternatives, click these links for naming conventions in other languages.
+<b>java programs</b> http://www.oracle.com/technetwork/java/codeconventions-135099.html
+<br><b>c programs  </b>https://users.ece.cmu.edu/~eno/coding/CCodingStandard.html#names
+
+Your language not on this list and important? open an issue and I will gladly add the convention.
+<br>cheers, Michael Dimmitt
 ### Questions
 
   Aim to have just a single class/module per source file. Name the file name as the class/module, but replacing CamelCase with snake_case.
@@ -7,7 +13,7 @@
 > The only real difficulties in programming are cache invalidation and
 > naming things. <br>
 > -- Phil Karlton
-  
+
   ### Quick Reference Section
 
   Github Repositories named by the ruby community seem to use snake case, ex: project_name.
@@ -19,12 +25,12 @@
   `lib/hello_world/hello_world.rb`.
 
   Use `UpperCamelCase` (PascalCase) for classes and modules.  (Keep acronyms like HTTP, RFC, XML uppercase.)
-  
+
   Use `snake_case` for symbols, methods and variables.
   Do not separate numbers from letters on symbols, methods and variables.
 
   Use `SCREAMING_SNAKE_CASE` for other constants.
-  
+
   The names of predicate methods (methods that return a boolean value) should
   end in a question mark.  (i.e. `Array#empty?`). Methods that don't return a
   boolean, shouldn't end in a question mark.
@@ -38,14 +44,14 @@
   does), etc.) should end with an exclamation mark if there exists a safe
   version of that *dangerous* method.
 
-  part 2 ... 
-  
+  part 2 ...
+
   Define the non-bang (safe) method in terms of the bang (dangerous) one if
   possible.
 
   When defining binary operators, name the parameter `other`(`<<` and `[]` are
   exceptions to the rule, since their semantics are different).
-  
+
   ## Naming Repeated, with examples for Referencing purposes
   Use `snake_case` for symbols, methods and variables.
   Do not separate numbers from letters on symbols, methods and variables.
@@ -174,3 +180,25 @@
 
   Avoid writing comments to explain bad code. Refactor the code to make it
   self-explanatory. ("Do or do not&mdash;there is no try." Yoda)
+
+
+<pre>
+   ╔═══════════════════════╦═════════════╦════════════╦══════════════╦════════════╦════════════╗
+   ║      PHP Project      ║   Classes   ║  Methods   ║  Properties  ║ Functions  ║ Variables  ║
+   ╠═══════════════════════╬═════════════╬════════════╬══════════════╬════════════╬════════════╣
+   ║ Akelos Framework      ║ PascalCase  ║ camelCase  ║ camelCase    ║ lower_case ║ lower_case ║
+   ║ CakePHP Framework     ║ PascalCase  ║ camelCase  ║ camelCase    ║ camelCase  ║ camelCase  ║
+   ║ CodeIgniter Framework ║ Proper_Case ║ lower_case ║ lower_case   ║ lower_case ║ lower_case ║
+   ║ Concrete5 CMS         ║ PascalCase  ║ camelCase  ║ camelCase    ║ lower_case ║ lower_case ║
+   ║ Doctrine ORM          ║ PascalCase  ║ camelCase  ║ camelCase    ║ camelCase  ║ camelCase  ║
+   ║ Drupal CMS            ║ PascalCase  ║ camelCase  ║ camelCase    ║ lower_case ║ lower_case ║
+   ║ Joomla CMS            ║ PascalCase  ║ camelCase  ║ camelCase    ║ camelCase  ║ camelCase  ║
+   ║ modx CMS              ║ PascalCase  ║ camelCase  ║ camelCase    ║ camelCase  ║ lower_case ║
+   ║ Pear Framework        ║ PascalCase  ║ camelCase  ║ camelCase    ║            ║            ║
+   ║ Prado Framework       ║ PascalCase  ║ camelCase  ║ Pascal/camel ║            ║ lower_case ║
+   ║ SimplePie RSS         ║ PascalCase  ║ lower_case ║ lower_case   ║ lower_case ║ lower_case ║
+   ║ Symfony Framework     ║ PascalCase  ║ camelCase  ║ camelCase    ║ camelCase  ║ camelCase  ║
+   ║ WordPress CMS         ║             ║            ║              ║ lower_case ║ lower_case ║
+   ║ Zend Framework        ║ PascalCase  ║ camelCase  ║ camelCase    ║ camelCase  ║ camelCase  ║
+   ╚═══════════════════════╩═════════════╩════════════╩══════════════╩════════════╩════════════╝
+</pre>
