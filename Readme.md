@@ -202,3 +202,17 @@ Your language not on this list and important? open an issue and I will gladly ad
    ║ Zend Framework        ║ PascalCase  ║ camelCase  ║ camelCase    ║ camelCase  ║ camelCase  ║
    ╚═══════════════════════╩═════════════╩════════════╩══════════════╩════════════╩════════════╝
 </pre>
+
+<pre>
+React.js Naming Convention
+HTML tags are always using lowercase tag names, while React components starts with Uppercase.
+
+NOTE
+You should use className and htmlFor as XML attribute names instead of class and for.
+
+This is explained on React official page −
+
+Since JSX is JavaScript, identifiers such as class and for are discouraged as XML 
+attribute names. Instead, React DOM components expect DOM property names like
+className and htmlFor, respectively.
+</pre>
